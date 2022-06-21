@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(185, 185, 185);
+}
+
+.container{
+    position: relative;
+    min-width: 300px;
+    min-height: 400px;
+    padding: 40px 30px 30px;
+    background-color: #333;
+    border-radius: 20px;
+}
+
+.calculator{
+    position: relative;
+    display: grid;
+}
+
+.calculator .value{
+    position: relative;
+    grid-column: span 4;
+    height: 100px;
+    width: 100%;
+    border: 2px solid black;
+    outline: none;
+    background-color: #a7af7c;
+    border-radius: 10px;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+.container span{
+    position: relative;
+    display: grid;
+    width: 80px;
+    height: 80px;
+    color: white;
+    margin: 8px;
+    background-color: black;
+    user-select: none;
+    cursor: pointer;
+    font-size: 30px;
+    place-items:center;
+    box-shadow: 4px 10px 10px 4px #151515;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.container .num-clear{
+    width: 200px;
+    grid-column: span 2;
+    background-color: rgb(231, 16, 16);
+}
+
+.container .num-expressions{
+    background-color: rgb(92, 92, 92);
+}
+
+.container .num-expressions-sum{
+    height: 200px;
+    grid-row:  span 2;
+    background-color: rgb(201, 104, 0);
+    font-size: 30px;
+}
+
+.container .num-result{
+    background-color: rgb(6, 139, 248);
+}
